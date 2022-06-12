@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.app-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10vh;
+  background-color: dodgerblue;
+}
+
+.logo-container {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.history-img {
+  width: 110px;
+  height: 30px;
+  display: flex;
+  align-self: center;
+  margin-left: 45px;
+}
+
+.input-search-container {
+  display: flex;
+  align-self: center;
+  margin: auto;
+  height: 35px;
+}
+.search-logo-container {
+  width: 30px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+
+  border: 1px solid gray;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .search-logo-container {
+    width: 40px;
+  }
+}
+.search-icon {
+  height: 20px;
+  width: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .search-icon {
+    width: 25px;
+  }
+}
+.search-input {
+  color: black;
+  background-color: rgb(235, 233, 233);
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 400;
+  width: 100%;
+  outline: none;
+  border: 1px solid #6697ff;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-left: 10px;
+  border: 1px solid gray;
+}
+@media screen and (min-width: 768px) {
+  .search-input {
+    width: 350px;
+  }
+}
+
+.history-list-container {
+ 
+  max-width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0.2, 0.2);
+  margin: 15px;
+}
+
+.history-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin: 40px;
+}
+
+.Empty-history-message {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto';
+  width: 100%;
+  min-height: 400px;
+  color: black;
+  font-size: 25px;
+}
